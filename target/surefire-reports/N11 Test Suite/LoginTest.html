@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 13 02:15:20 EET 2017</td>
+<td>Started on:</td><td>Thu Dec 21 15:38:11 MSK 2017</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40354 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19392 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword()'><b>invalidLoginTest_EmptyUserEmptyPassword</b><br>Test class: tests.LoginTests<br>Test method: Invalid Login Scenario with empty username and password.</td>
-<td><div><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alan?n doldurulmas? zorunludur.]
-	at pages.LoginPage.verifyLoginPassword(LoginPage.java:40)
-	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:57)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077845538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2077845538'><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alan?n doldurulmas? zorunludur.]
+<td><div><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alanın doldurulması zorunludur.]
+	at pages.LoginPage.verifyLoginPassword_aroundBody4(LoginPage.java:43)
+	at pages.LoginPage$AjcClosure5.run(LoginPage.java:1)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at pages.LoginPage.verifyLoginPassword(LoginPage.java:43)
+	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:73)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795308615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795308615'><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alanın doldurulması zorunludur.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at pages.LoginPage.verifyLoginPassword(LoginPage.java:40)
-	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:57)
+	at pages.LoginPage.verifyLoginPassword_aroundBody4(LoginPage.java:43)
+	at pages.LoginPage$AjcClosure5.run(LoginPage.java:1)
+	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at pages.LoginPage.verifyLoginPassword(LoginPage.java:43)
+	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,8 +125,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
-<td>6</td>
-<td>tests.LoginTests@6c25e6c4</td></tr>
+<td>4</td>
+<td>tests.LoginTests@f79a760</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,8 +138,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='tests.LoginTests.invalidLoginTest_InvalidUserNameInvalidPassword()'><b>invalidLoginTest_InvalidUserNameInvalidPassword</b><br>Test class: tests.LoginTests<br>Test method: Invalid Login Scenario with wrong username and password.</td>
 <td></td>
-<td>14</td>
-<td>tests.LoginTests@6c25e6c4</td></tr>
+<td>6</td>
+<td>tests.LoginTests@f79a760</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -143,19 +150,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword()'><b>invalidLoginTest_EmptyUserEmptyPassword</b><br>Test class: tests.LoginTests<br>Test method: Invalid Login Scenario with empty username and password.</td>
-<td><div><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alan?n doldurulmas? zorunludur.]
-	at pages.LoginPage.verifyLoginPassword(LoginPage.java:40)
-	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:57)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1969925628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1969925628'><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alan?n doldurulmas? zorunludur.]
+<td><div><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alanın doldurulması zorunludur.]
+	at pages.LoginPage.verifyLoginPassword_aroundBody4(LoginPage.java:43)
+	at pages.LoginPage$AjcClosure5.run(LoginPage.java:1)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at pages.LoginPage.verifyLoginPassword(LoginPage.java:43)
+	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:73)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597400455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597400455'><pre>java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alanın doldurulması zorunludur.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at pages.LoginPage.verifyLoginPassword(LoginPage.java:40)
-	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:57)
+	at pages.LoginPage.verifyLoginPassword_aroundBody4(LoginPage.java:43)
+	at pages.LoginPage$AjcClosure5.run(LoginPage.java:1)
+	at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
+	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:46)
+	at pages.LoginPage.verifyLoginPassword(LoginPage.java:43)
+	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -185,8 +199,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
-<td>4</td>
-<td>tests.LoginTests@6c25e6c4</td></tr>
+<td>3</td>
+<td>tests.LoginTests@f79a760</td></tr>
 </table><p>
 </body>
 </html>

@@ -45,9 +45,7 @@ public class ScreenShotRobot {
             File file = new File(filePath);
             ImageIO.write(screencapture, "png", file);
 
-        } catch (AWTException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (AWTException | IOException e) {
             e.printStackTrace();
         }
     }

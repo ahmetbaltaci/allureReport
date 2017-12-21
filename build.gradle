@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'allurereportexample'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'3.6.0'
+    compile group: 'com.relevantcodes', name: 'extentreports', version:'2.41.2'
+    compile group: 'org.testng', name: 'testng', version:'6.11'
+    compile group: 'ru.yandex.qatools.ashot', name: 'ashot', version:'1.5.4'
+    compile group: 'io.qameta.allure', name: 'allure-testng', version:'2.0-BETA19'
+}
+
+
+test {
+    useTestNG() {
+        scanForTestClasses = false
+        suites 'TestNG.xml'
+        ignoreFailures = true // Hata durumunda build fail olmaması için tanım
+    }
+    testLogging {
+        events "PASSED", "STARTED", "FAILED", "SKIPPED"
+    }
+}
